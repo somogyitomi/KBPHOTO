@@ -1,0 +1,119 @@
+.kliensek{
+  display:block;
+  width: 100%;
+  text-align: center;
+  font-size: 30px;
+  margin-top: 100px;
+  letter-spacing: 5px;
+  font-family: 'Orbitron', sans-serif;
+  font-weight: 400;
+
+}
+
+
+img{
+  display: block;
+  max-height:40vh;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40px;
+  margin-bottom: 70px;
+}
+
+
+@keyframes mtva {
+  0%{transform: translateX(-50%);
+  opacity: 0;}
+  25%{transform: translateX(-0%);
+  opacity: 1;}
+}
+
+
+@keyframes allianz {
+  0%{transform: translateY(-50%);
+  opacity: 0;}
+  25%{transform: translateY(-50%);
+  opacity: 0;}
+  50%{transform: translateY(-0%);
+  opacity: 1;}
+}
+
+@keyframes buddha {
+  0%{transform: translateY(+50%);
+  opacity: 0;}
+  50%{transform: translateY(+50%);
+  opacity: 0;}
+  75%{transform: translateY(+0%);
+  opacity: 1;}
+}
+
+
+
+@keyframes neverland {
+  0%{transform: translateY(+50%);
+  opacity: 0;}
+  75%{transform: translateX(+50%);
+  opacity: 0;}
+  100%{transform: translateX(+0%);
+  opacity: 1;}
+}
+
+
+#mtva{
+  animation: mtva 3s;
+}
+
+#allianz{
+  animation: allianz 3s;
+}
+
+
+#buddha{
+  animation: buddha 3s;
+}
+
+#neverland{
+  animation: neverland 3s;
+}
+
+@media (min-width:1040px){
+  
+  
+  .logo-wrapper{
+    display: table;
+    width: 80%;
+    height: 80vh;
+    text-align: center;
+     margin-right: auto;
+    margin-left: auto;
+  }
+
+  .client-logo{
+    display: table-cell;
+    vertical-align: middle;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  
+  
+  img{
+    margin-left: 20px;
+    margin-right: 20px;
+    max-width: 20vw;
+    
+  }
+  
+  .kliensek{
+    font-size:50px;
+    letter-spacing: 8px;
+  }
+  
+  
+  body{
+    overflow-y: hidden;
+  }
+  
+}
+*{
+  padding: 0;
+}

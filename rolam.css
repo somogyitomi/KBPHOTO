@@ -1,0 +1,76 @@
+.aboutme{
+ display:block;
+  width: 100%;
+  text-align: center;
+  font-size: 40px;
+  margin-top: 100px;
+  letter-spacing: 15px;
+  font-family: 'Orbitron', sans-serif;
+
+}
+
+
+.text{
+  margin-top: 25px;
+  width: 80%;
+  margin-right: auto;
+  margin-left: auto;
+  font-size: 1rem;
+  font-family: 'Orbitron', sans-serif;
+}
+
+p{
+  margin-top: 30px;
+  letter-spacing: 2px;
+}
+
+.profileimg{
+  display: block;
+  height: 80vh;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 50px;
+  margin-bottom:10%;
+}
+
+
+@media (min-width:900px){
+  
+  
+  body{
+    text-align: center;
+  }
+  .text{
+    display: inline-block;
+    width: 40%;
+    height: 70vh;
+    margin-top:0;
+    text-align: left;
+    margin-right: 30px;
+    font-size: 1.4rem;
+    margin-right: 25px;
+    
+   
+  }
+  
+  p{
+     margin-top: 0;
+    margin-bottom: 30px;
+    
+  }
+  
+  
+  .profileimg{
+    right:300;
+    display: inline-block;
+    height: 350px;
+    margin-left: 30px;   
+    margin: 0px;
+    margin-left: 25px;
+  }
+  
+  .aboutme{
+  padding-bottom: 100px;
+}
+  
+}

@@ -1,0 +1,161 @@
+*{
+  box-sizing:border-box
+}
+
+nav{
+    background-color: rgba(0,0,0,0.5);
+
+}
+
+/* === Mobile view === */
+
+.portfolio-links{
+  position: absolute;
+  top:50px;
+  width:100%;
+  height:auto;
+}
+
+
+
+.portfolio-image{
+  background-color: rgba(0,0,0,0.3);
+  width:90%;
+  height:200px;
+  display: block;
+  margin:5%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+
+.text{
+  display: table;
+  width:100%;
+  height:100%;
+  
+  
+}
+
+
+h3{
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  text-decoration: none;
+  font-size: 20px;
+  font-family: 'Orbitron', sans-serif;
+
+
+}
+
+
+a{
+  text-decoration: none;
+  color: white;
+}
+
+
+#portrait{
+  background: url('images/background/2.jpg');
+  background-position: 70% 0%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#commercial{
+  background: url(images/portfolio/commercial_optimized.png);
+   background-position: 25% 0%;
+   background-size:cover;
+   background-repeat: no-repeat;
+}
+
+#before-after{
+   background: url(images/background/1.jpg);
+   background-position: 50% 50%;
+   background-size:cover;
+   background-repeat: no-repeat;
+  
+}
+
+
+#video{
+  background: url(images/background/5.jpg);
+   background-position: 70% 0%;
+   background-size:cover;
+   background-repeat: no-repeat;
+}
+
+
+
+
+@media (min-width:700px){ 
+  
+  
+  .portfolio-image{
+    height: 400px;
+  }
+  
+  
+  h3{
+    font-size: 30px;
+  }  
+}
+
+
+
+@media (min-width:1000px){
+  .portfolio-image{
+    height: 550px;
+  }
+   h3{
+    font-size: 35px;
+  }  
+  
+}
+
+
+/* === Desktop View === */
+
+
+@media (min-width:1200px){
+  
+ 
+
+  
+  
+  .portfolio-links{
+  position: absolute;
+  top:62.5px;
+  width:100%;
+  height:86%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  margin-top: 2.5vh;
+  display: block;
+  overflow-y: hidden;
+}
+  
+  
+  
+.portfolio-image{
+  display: inline-block;
+  background-color: rgba(0,0,0,0.3);
+  width:23.6%;
+  height:100%;
+  margin: .5%;
+  
+}
+  
+  h3{
+    font-size: 30px;
+  }
+  
+  
+  .text:hover{
+    color:red;
+    background-color: rgba(0,0,0,0.1);}
+  
+}

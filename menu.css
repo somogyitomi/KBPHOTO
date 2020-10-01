@@ -1,0 +1,368 @@
+*{
+  box-sizing: border-box;
+}
+
+body{
+  margin:0;
+  padding:0;
+  height: 100vh;
+  width: 100%;
+  display: block;
+ 
+}
+
+
+/* === Nav Bar mobile view === */
+
+.buttons-desktop, .logo-desktop{
+  display:none;
+}
+
+nav{
+  display: block;
+  background-color: rgba(0,0,0,0.3);
+  width:100%;
+  height:50px;
+  top:0;
+  position:absolute;
+  text-align: center;
+  z-index: 2;
+}
+
+.logo {
+  width: 50vw;
+  color: azure;
+  display:table-cell;
+  letter-spacing: 5px;
+  padding-left: 20px;
+  padding-top:  5px;
+  font-size:40px;
+  font-weight: 500;
+  font-family: 'Megrim', cursive;
+  vertical-align: middle; 
+  text-align: center;
+  
+}
+
+
+
+
+
+.logo a{
+  text-decoration: none;
+  color:azure;
+  font-size:40px;
+  font-weight: 500;
+  font-family: 'Megrim', cursive;
+  vertical-align: middle; 
+  
+}
+
+
+
+
+
+  li a{
+  font-family: 'Orbitron', sans-serif;
+
+}
+
+/* === Mobile Menu === */
+
+#myLinks{
+  display:none;
+}
+
+
+@keyframes fadeIn{
+  0%{
+  opacity:0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
+
+
+.buttons{
+  display: block;
+  background-color: rgba(0,0,0,0.5);
+  height:100vh;
+  width:100%;
+  position: absolute;
+  top: 50px;
+  right:0;
+  text-align: center;
+  animation:fadeIn 0.5s;
+  overflow: hidden;
+
+}
+
+@keyframes slideInButtonsMobile{
+  0%{opacity:0;
+    transform: translateX(+50px);
+  }100%{
+    opacity:1;
+    transform: translateX(0);
+  }
+}
+
+.buttons li{
+  display: table;
+  margin-left: auto;
+  margin-right: auto;
+  vertical-align: middle;
+  padding: 5px;
+  width:80%;
+  height:20vh;
+  animation: slideInButtonsMobile .3s;
+}
+
+.buttons a {
+  display: table-cell;
+  text-decoration: none;
+  vertical-align:middle;
+  color: azure;
+  letter-spacing: 5px;
+  font-size:16px;
+  
+}
+
+.buttons a::after{
+  display: block;
+  position:absolute;
+  content:"";
+  height:4px;
+  width:75%;
+  margin-top:8.5vh;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgba(0,0,0,0.1);
+  
+}
+
+/* === Hamburger Icon === */
+
+
+
+.nav-icon{
+  cursor: pointer;
+  display:block;
+  position: absolute;
+  right:3.5vh;
+  top:15px;
+  width:20px;
+  height:20px;
+}
+
+.line1, .line2, .line3 {
+  position:absolute;
+ left:0;
+  display:block;
+  height:3px;
+  width:100%;
+  background:white;
+  border-radius: 10px;
+}
+
+.line2{
+  top:40%;
+}
+
+
+.line3{
+  bottom:1;
+}
+
+
+
+
+/* === Opened Hamburger Icon === */
+
+
+.open .line1{
+  top: 45%;
+  transform: rotate(135deg);
+  transition: ease-in-out .25s;
+  background: red;
+}
+
+.open .line2{
+  top:45%;
+  opacity: 0;
+  transition: ease-in-out .25s;
+
+}
+
+
+.open .line3{
+  top:45%;
+  transform: rotate(-135deg);
+  transition: ease-in-out .25s;
+  background: red;
+
+}
+
+
+@media (min-width:1000px){
+  
+  
+  nav{
+    height:70px;
+  }
+  
+  .logo{
+    width: 100vw;
+    font-size: 50px;
+    padding-top:  15px;    
+  }
+  .nav-icon{
+     top:25px;
+     width:30px;
+     height:30px;
+  }
+  
+  .buttons{
+    top: 70px;
+  }
+}
+
+
+/* === Desktop View === */
+
+@media (min-width:1200px){
+  
+  
+  nav {
+    height:70px;
+  }  
+  
+/* === logo === */
+  
+  
+
+.logo, .nav-icon {
+  display:none;
+}
+  
+  .logo-desktop {
+     width: 25%;
+     color: azure;
+     display:inline-block;
+     margin-top: 5px;
+     
+  }
+  
+  .logo-desktop a{
+    color: azure;
+    text-decoration: none;
+    font-family: 'Megrim', cursive;
+    vertical-align: middle;
+    text-align: center;
+    font-size: 60px;
+
+  }
+  
+  /* == Buttons === */ 
+  
+  
+  @keyframes button1{
+    0%{opacity: 0;
+    transform: translateX(+300px) translateY(-7px);
+    }50%{opacity: 0;
+    transform: translateX(+300px) translateY(-7px);
+    }100%{
+      opacity: 1;
+      transform: translateX(0)translateY(-7px);
+    }
+    
+  }
+  
+   @keyframes button2{0%{opacity: 0;
+    transform: translateX(+150px) translateY(-7px);
+    }50%{opacity: 0;
+    transform: translateX(+150px) translateY(-7px);
+    }100%{
+      opacity: 1;
+      transform: translateX(0)translateY(-7px);
+    }
+   
+  }
+  
+   @keyframes button3{0%{opacity: 0;
+    transform: translateX(-150px) translateY(-7px);
+    }50%{opacity: 0;
+    transform: translateX(-150px) translateY(-7px);
+    }100%{
+      opacity: 1;
+      transform: translateX(0)translateY(-7px);
+    }
+    
+  }
+     
+  @keyframes button4{0%{opacity: 0;
+    transform: translateX(-300px) translateY(-7px);
+    }50%{opacity: 0;
+    transform: translateX(-300px) translateY(-7px);
+    }100%{
+      opacity: 1;
+      transform: translateX(0)translateY(-7px);
+    }
+    
+     }
+  
+  #button1{
+    animation: button1 4s;
+    
+  }
+  
+  #button2{
+    animation: button2 4s;
+
+  }
+  
+  #button3{
+    animation: button3 4s;
+    }
+    
+  #button4{
+    animation: button4 4s;
+    }
+  
+  
+  #buttons-desktop1{
+    text-align: right;
+  
+  }
+  
+  #buttons-desktop2{
+    text-align: left;
+  
+  }
+  
+  .buttons-desktop{
+    display: inline-block;
+    width:35%;
+  }
+  
+  .buttons-desktop li {
+    display:inline-block;
+    font-size:24px;
+    margin-left: 20px;
+    margin-right: 20px;
+    transform: translateY(-7px);
+
+  }
+  
+  .buttons-desktop a {
+    text-decoration: none;
+    color:white;
+    letter-spacing: 5px;
+  }
+  
+  .buttons-desktop a:hover{
+    color:rgb(255,30,50);
+  }
+
+}

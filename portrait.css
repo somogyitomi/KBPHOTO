@@ -1,0 +1,146 @@
+body{
+  overflow-x: hidden;
+}
+
+.galerry-image{
+  cursor: pointer;
+}
+
+.galerry-image:hover{
+ transform: scale(1.1);
+  position: relative;
+  z-index: 3;
+  transition: ease-in-out 0.5s;
+}
+
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+  margin-top: 70px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 850px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 500px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+
+
+
+/* === Lightbox === */
+
+@keyframes img {
+  0%{opacity: 0;}
+  100%{opacity: 1;}
+}
+
+
+#lightbox{
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 3;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  animation: img 0.2s;
+}
+
+
+
+.lightbox-image{
+  display: none;
+  vertical-align:middle;
+  text-align: center;
+  height: 80vh;
+  animation: img 0.3s;
+}
+
+
+.imgsize{
+  position:relative;
+  max-height: 90vh;
+  max-width: 90%;
+}
+
+
+#close-cursor{
+  position: absolute;
+  top: 12.5px;
+  right: 25px;
+  font-size: 75px;
+  color: red;
+  cursor: pointer;
+  text-shadow: 3px 2px rgba(0,0,0,0.3);
+}
+
+
+#close-cursor:hover{
+  transform: scale(1.3);
+  transition: .3s;
+}
+
+
+.prev{
+  position: absolute;
+  left: 25px;
+  top: 50%;
+  z-index: 10;
+  font-size: 50px;
+  color: black;
+  cursor: pointer;
+  text-shadow: 5px 1px rgba(0,0,0,0.3);
+}
+
+.prev:hover{
+  transform: scale(1.1);
+  transition: .3s;
+  
+}
+
+
+.next{
+  position: absolute;
+  right: 25px;
+  top: 50%;
+  z-index: 10;
+  font-size: 50px;
+  color: black;
+  cursor: pointer;
+  text-shadow: 5px 1px rgba(0,0,0,0.3);
+}
+
+
+.next:hover{
+  transform: scale(1.1);
+  transition: .3s;
+  
+}

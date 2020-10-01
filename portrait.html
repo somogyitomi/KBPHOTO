@@ -1,0 +1,168 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Bnshots.com</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://fonts.googleapis.com/css?family=Megrim&display=swap" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css?family=Orbitron&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="css-reset.css">
+        <script src="portrait.js"></script>
+        <link rel="stylesheet" type="text/css" href="menu.css">
+        <link rel="stylesheet" type="text/css" href="portrait.css">
+        <script src="menu.js"></script>       
+    </head>
+    <body>
+      <nav>
+        <div id = 'buttons-desktop1' class = "buttons-desktop">
+        <ul>
+          <li id ='button1'><a href='portfolio.html'>Portfólió </a></li>
+          <li id ='button2'><a href='kliensek.html'>Kliensek</a></li>
+        </ul>
+        </div>
+        <div class = "logo-desktop">
+          <a href="index.html">
+         <h2>BnShots</h2>        
+          </a>
+        </div>
+        <div id = 'buttons-desktop2' class = "buttons-desktop">
+        <ul>
+          <li id='button3'><a href='rolam.html'>Rólam </a></li>
+          <li id='button4'><a href='kapcsolat.html'>Kapcsolat</a></li>
+        </ul>
+        </div>        
+        <div class = "logo">
+        <a href="index.html">
+         <h2>BnShots</h2>        
+          </a>
+        </div>
+        <div class="nav-icon" onclick="myFunction(this)">
+          <span class ='line1'></span>
+          <span class ='line2'></span>
+          <span class= 'line3'></span>
+        </div>
+        <div id = 'myLinks' class = "buttons">
+        <ul>
+          <li><a href='portfolio.html'>Portfólió </a></li>
+          <li><a href='kliensek.html'>Kliensek</a></li>
+          <li><a href='rolam.html'>Rólam</a></li>
+          <li><a href='kapcsolat.html'>Kapcsolat</a></li>
+        </ul>
+        </div>
+      </nav>
+      <div class="row">
+        <div class="column">
+         <img src="images/portrait/1.jpg" onclick="openLightbox();currentImg(1)" class ="galerry-image">
+         <img src="images/background/2.jpg" onclick="openLightbox();currentImg(2)" class ="galerry-image">
+         <img src="images/background/3.jpg" onclick="openLightbox();currentImg(3)" class ="galerry-image">
+         <img src="images/background/4.jpg" onclick="openLightbox();currentImg(4)" class ="galerry-image">
+         <img src="images/background/5.jpg" onclick="openLightbox();currentImg(5)" class ="galerry-image">
+         <img src="images/portrait/6.jpg" onclick="openLightbox();currentImg(6)" class ="galerry-image">
+       </div>
+       <div class="column">
+         <img src="images/portrait/7.jpg" onclick="openLightbox();currentImg(7)" class ="galerry-image">
+         <img src="images/portrait/8.jpg" onclick="openLightbox();currentImg(8)" class ="galerry-image">
+         <img src="images/portrait/9.jpg" onclick="openLightbox();currentImg(9)" class ="galerry-image">
+         <img src="images/portrait/10.jpg" onclick="openLightbox();currentImg(10)" class ="galerry-image">
+         <img src="images/portrait/1.jpg" onclick="openLightbox();currentImg(11)" class ="galerry-image">
+         <img src="images/portrait/2.jpg" onclick="openLightbox();currentImg(12)" class ="galerry-image">
+
+      </div>
+      <div class="column">
+        <img src="images/portrait/3.jpg" onclick="openLightbox();currentImg(13)" class ="galerry-image">
+        <img src="images/portrait/4.jpg" onclick="openLightbox();currentImg(14)" class ="galerry-image">
+        <img src="images/portrait/5.jpg" onclick="openLightbox();currentImg(15)" class ="galerry-image">
+        <img src="images/portrait/6.jpg" onclick="openLightbox();currentImg(16)" class ="galerry-image">
+        <img src="images/portrait/7.jpg" onclick="openLightbox();currentImg(17)" class ="galerry-image">
+        <img src="images/portrait/8.jpg" onclick="openLightbox();currentImg(18)" class ="galerry-image">  
+      </div>
+      <div class="column">
+        <img src="images/portrait/9.jpg" onclick="openLightbox();currentImg(19)" class ="galerry-image">
+        <img src="images/portrait/10.jpg" onclick="openLightbox();currentImg(20)" class ="galerry-image">
+        <img src="images/portrait/1.jpg" onclick="openLightbox();currentImg(21)" class ="galerry-image">
+        <img src="images/portrait/2.jpg" onclick="openLightbox();currentImg(22)" class ="galerry-image">
+        <img src="images/portrait/3.jpg" onclick="openLightbox();currentImg(23)" class ="galerry-image">
+        <img src="images/portrait/4.jpg" onclick="openLightbox();currentImg(24)" class ="galerry-image">
+      </div>
+    </div>
+    <div id ="lightbox">
+      <span id="close-cursor" onclick="closeLightbox()">&times;</span>
+      <a class="prev" onclick="plusImg(-1)">&#10094;</a>
+      <a class="next" onclick="plusImg(1)">&#10095;</a>
+      <div class = "lightbox-image">
+        <img class="imgsize" src="images/portrait/1.jpg">
+      </div>
+      <div class = "lightbox-image">
+        <img class="imgsize" src="images/portrait/2.jpg">
+      </div>
+      <div class = "lightbox-image">
+        <img class="imgsize" src="images/portrait/3.jpg">
+      </div>
+      <div class = "lightbox-image">
+        <img class="imgsize" src="images/portrait/4.jpg">
+      </div>
+      <div class = "lightbox-image">
+        <img class="imgsize" src="images/portrait/5.jpg">
+      </div>
+      <div class = "lightbox-image">
+        <img class="imgsize" src="images/portrait/6.jpg">
+      </div>
+      <div class = "lightbox-image">
+        <img class="imgsize" src="images/portrait/7.jpg">
+      </div>
+      <div class = "lightbox-image">
+        <img class="imgsize" src="images/portrait/8.jpg">
+      </div>
+      <div class = "lightbox-image">
+        <img class="imgsize" src="images/portrait/9.jpg">
+      </div>
+      <div class = "lightbox-image">
+        <img class="imgsize" src="images/portrait/10.jpg">
+      </div>
+      <div class = "lightbox-image">
+        <img class="imgsize" src="images/portrait/1.jpg">
+      </div>
+      <div class = "lightbox-image">
+        <img class="imgsize" src="images/portrait/2.jpg">
+      </div>
+      <div class = "lightbox-image">
+        <img class="imgsize" src="images/portrait/3.jpg">
+      </div>
+      <div class = "lightbox-image">
+        <img class="imgsize" src="images/portrait/4.jpg">
+      </div>
+      <div class = "lightbox-image">
+        <img class="imgsize" src="images/portrait/5.jpg">
+      </div>
+      <div class = "lightbox-image">
+        <img class="imgsize" src="images/portrait/6.jpg">
+      </div>
+      <div class = "lightbox-image">
+        <img class="imgsize" src="images/portrait/7.jpg">
+      </div>
+      <div class = "lightbox-image">
+        <img class="imgsize" src="images/portrait/8.jpg">
+      </div>
+      <div class = "lightbox-image">
+        <img class="imgsize" src="images/portrait/9.jpg">
+      </div>
+      <div class = "lightbox-image">
+        <img class="imgsize" src="images/portrait/10.jpg">
+      </div>
+      <div class = "lightbox-image">
+        <img class="imgsize" src="images/portrait/1.jpg">
+      </div>
+      <div class = "lightbox-image">
+        <img class="imgsize" src="images/portrait/2.jpg">
+      </div>
+      <div class = "lightbox-image">
+        <img class="imgsize" src="images/portrait/3.jpg">
+      </div>
+      <div class = "lightbox-image">
+        <img class="imgsize" src="images/portrait/4.jpg">
+      </div>
+    </div>
+  </body>
+  <script src="portrait.js"></script>
+
+</html>
+  

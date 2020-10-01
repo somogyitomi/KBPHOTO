@@ -1,0 +1,198 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  
+}
+
+nav{
+  position: fixed;
+  z-index: 3;
+}
+
+.before{
+  height: 40vh;
+}
+
+.before-standing{
+  height:70vh;
+}
+
+.compariosn{
+  display: table-cell;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: aqua;
+}
+
+
+.container{
+  margin-right: auto;
+  margin-left: auto;
+  position: relative;
+  top:100px;
+  display: table;
+  margin-top:70px;
+  margin-bottom: 70px;
+  max-width: 80%;
+}
+
+#container-1{
+  margin-top: 0;
+}
+
+figure{
+  position: relative;
+  overflow: hidden;70
+  margin-left: auto;
+  margin-right: auto;
+  display:table;
+}
+
+#before{
+  display:block;
+}
+
+
+@keyframes divisor {
+  0%{width: 50%
+  }33.333%{width:100%
+  }66.666%{width: 0%
+  }100%{width: 50%}
+}
+
+.divisor{
+  display: block;
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height:100%;
+    overflow: hidden;
+    border-right: solid 4px;
+    border-color: aliceblue;
+    animation: divisor 4s;
+    animation-delay: .5s;
+  
+}
+
+
+.divisor img {
+  max-height:100%;
+  width:auto;
+  position:inherit;
+}
+
+
+
+input[type=range]{
+	-webkit-appearance:none;
+	-moz-appearance:none;
+	position: absolute;
+	top: 50%;
+  transform: translateY(-50%);
+	background-color: transparent;
+	width: 100%;
+    height: 100%;
+  z-index: 2;
+  
+  &:focus,
+  &:active {
+    border: none;
+    outline: none;
+  }
+}
+
+
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  -moz-appearance:none;
+  appearance:none;
+  border: none;
+  height: 100%;
+  width: 10px;
+  color: transparent;
+  border: 3px solid transparent;
+  cursor: pointer;
+
+}
+
+
+input[type=range]::-moz-range-thumb {
+  -moz-appearance:none;
+    -webkit-appearance: none;
+  width: 10px; /* Set a specific slider handle width */
+  height:40vh; /* Slider handle height */
+  background: transparent;
+  border: transparent;
+  cursor: pointer;
+}
+
+
+
+
+#slider2::-moz-range-thumb {
+  -moz-appearance:none;
+    -webkit-appearance: none;
+  width: 10px; /* Set a specific slider handle width */
+  height:70vh; /* Slider handle height */
+  background:transparent;
+  border: transparent;
+  cursor: pointer;
+} 
+
+
+
+@media (min-width:500px){
+  
+  
+  .before{
+  height: 80vh;
+}
+
+.before-standing{
+  height:80vh;
+}
+
+  
+}
+
+@media (min-height:1000px){
+  .before{
+  height: 60vh;
+}
+
+.before-standing{
+  height:80vh;
+}
+
+  
+}
+  
+
+@media (min-width:1000px){
+  
+  
+  .before{
+  height: 80vh;
+}
+
+.before-standing{
+  height:80vh;
+}
+
+  
+}
+
+
+@media (min-height:1000px){
+  .before{
+  height: 55vh;
+}
+
+.before-standing{
+  height:80vh;
+}
+
+  
+}
